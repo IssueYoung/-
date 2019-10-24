@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+<van-button type="default">默认按钮</van-button>
+<van-button type="primary">主要按钮</van-button>
+<van-button type="info">信息按钮</van-button>
+<van-button type="warning">警告按钮</van-button>
+<van-button type="danger">危险按钮</van-button>
+<movable-view>1</movable-view>
+ <button type="primary" bindtap="startAuth">开始认证</button>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <wxs module="test" src="./test.wxs"></wxs>
+<view change:prop="{{test.propObserver}}" prop="{{propValue}}" bindtouchmove="{{test.touchmove}}" class="movable">11111111</view>
+  <view wx:key="{{index}}" wx:for="{{arr}}">{{item}}</view>
+  <view wx:if="{{arr.length>4}}">大于四个</view>
+  <view wx:elif="{{arr.length>0&&arr.length<5}}">存在</view>
+  <view wx:else>无</view>
+  <view class="{{arr.length<4?'red':'blue'}}">颜色控制</view>
+  <view bindtap="goCanvas">去canvas</view>
+  <view bindtap="goCamera">去camera</view>
+  <view bindtap="goEditor">去editor</view>
+  <view class="usermotto">
+    <text bindlongtap="" class="user-motto">{{motto}}</text>
+  </view>
+  
+</view>

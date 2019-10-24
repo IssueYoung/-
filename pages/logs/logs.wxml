@@ -1,0 +1,15 @@
+<!--logs.wxml-->
+<van-button type="default">默认按钮</van-button>
+<van-button type="primary">主要按钮</van-button>
+<van-button type="info">信息按钮</van-button>
+<van-button type="warning">警告按钮</van-button>
+<van-button type="danger">危险按钮</van-button>
+<view><van-slider  bar-height="4px" value="50" bind:change="onChange" /></view>
+<view class="container log-list">
+
+
+
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>

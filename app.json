@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/fullpage/index",
+    "pages/shopIndex/shopIndex",
+    "pages/goodsDetail/goodsDetail",
+    "pages/category/category",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/canvas/canvas",
+    "pages/camera/camera",
+    "pages/editor/editor"
+    
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "pageOrientation": "auto"
+  },
+  "usingComponents": {
+    "van-button": "/miniprogram_npm/vant-weapp/button/index"
+  },
+  "workers": "workers",
+  "resizable": true,
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#d81e06",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "icon/index1.png",
+        "iconPath": "icon/index.png",
+        "pagePath": "pages/shopIndex/shopIndex",
+        "text": "商城"
+      },
+      {
+        "selectedIconPath": "icon/index1.png",
+        "iconPath": "icon/index.png",
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      },
+      {
+        "selectedIconPath": "icon/index1.png",
+        "iconPath": "icon/index.png",
+        "pagePath": "pages/fullpage/index",
+        "text": "全屏"
+      }
+    ]
+  }
+}

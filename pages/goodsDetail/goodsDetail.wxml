@@ -1,0 +1,54 @@
+<view class="contain">
+  <!-- banner -->
+  <swiper class="banner" circular="true" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-color="rgba(255, 255, 255, .3)" indicator-active-color="rgba(255, 255, 255, 1)" interval="{{interval}}" duration="{{duration}}">
+    <block wx:key="{{imgUrls}}" wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" data-id="{{index}}" bindtap="goDetail" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- banner -->
+  <view class="sellName">全新小米9 xiaomi新品三摄 骁龙855 全网通4G 双卡双待 水滴全面屏拍照游戏智能手机水滴全面屏拍照游戏智能手机</view>
+  <view class="priceBox">
+    <view class="lowPrice">
+      <view class="f-34">¥</view>
+      <view class="f-50">3,720</view>
+      <view class="f-34">.00</view>
+    </view>
+    <view class="date">
+      <view class="f-26">¥</view>
+      <view class="f-30">999.00</view>
+      <view class="f-26">×12期</view>
+    </view>
+  </view>
+  <view class="tips">正品保证/极速发货/不支持七天无理由退货</view>
+  <view class="check">
+    <view class="col-xs-2 f-28">选择</view>
+    <view class="col-xs-8 f-28">颜色，内存</view>
+    <view class="col-xs-2">
+      <image src="image/ico_check.png"></image>
+    </view>
+  </view>
+  <view class="check">
+    <view class="col-xs-2 f-28">送至</view>
+    <view class="col-xs-8 f-28">黑龙江省哈尔滨市南岗区中山路113-3号哈哈哈哈</view>
+    <view class="col-xs-2">
+      <image src="image/ico_check.png"></image>
+    </view>
+  </view>
+  <view class="gray"></view>
+  <view class="goodsTitle f-26">
+    <image src="image/ico_sp.png" alt=""></image> 商品介绍</view>
+  <view class="detailImg">
+    <image src="//img30.360buyimg.com/sku/jfs/t1/16718/16/10934/121902/5c8b3b8eE6cc3f7ae/f6a8fca0d0137976.jpg"></image>
+  </view>
+  <view class="fixBox">
+    <view>
+    <image src="image/ico_kf.png"></image>
+      <view class="f-20">联系客服</view>
+    </view>
+    <view class="f-30">
+      立即购买
+    </view>
+  </view>
+</view>

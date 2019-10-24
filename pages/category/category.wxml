@@ -1,0 +1,19 @@
+<view class="goodsClass">
+  <view class="title">商品分类</view>
+  <view class="leftBox">
+    <view class="typeList" bindtap="change">
+      <view class="li" data-id="{{item.id}}" wx:for="{{category_list}}" wx:key="{{item.id}}">
+        <view data-id="{{item.id}}" class="{{activity==item.id?'i display':'i'}}"></view>
+        <view data-id="{{item.id}}" class="{{activity==item.id?'span check':'span'}}">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="rightBox">
+    <view wx:if="{{children_list!=null&&children_list.length>0}}" class="subTypeList">
+      <view wx:for="{{children_list}}" wx:key="{{index}}" class="subTypeItem">
+        <image src="{{item.thumb}}"></image>
+        <view class="span">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>

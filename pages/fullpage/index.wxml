@@ -1,0 +1,56 @@
+<swiper current="2" bindchange="change" id="swiper" vertical="true">
+  <block>
+    <swiper-item id="page1">
+      <view class="{{Id==0?'whiteBg check':'whiteBg'}}">
+        <view></view>
+      </view>
+      <image class="img1" src="img/1.png"></image>
+      <view class="t1">甜 | 蜜 | 告 | 白</view>
+      <!-- <image class="img2" src="img/2.png"></image> -->
+      <!-- <image class="img3" src="img/3.png"></image> -->
+      <image class="img4" src="img/4.png"></image>
+      <image class="img5" src="http://res1.eqh5.com/Fl6fhjiQeEoWTlTC6EkgbAE1YYMS?imageMogr2/auto-orient/thumbnail/85x61%3E/format/webp"></image>
+      <image class="img6" src="img/6.png"></image>
+      <view class="t2">嗨，亲爱的你收到一封情书</view>
+      <view class="t3">
+        <view>开启情书</view>
+      </view>
+    </swiper-item>
+    <swiper-item id="page2">
+      <view class="{{Id==1?'whiteBg check':'whiteBg'}}">
+        <view></view>
+      </view>
+      <view class="t4">
+        <view>遇见你遇见爱
+          <image class="heart1" src="http://res1.eqh5.com/FlgpNH3RK0-ItcmOXZjFu7dBJ_o9?imageMogr2/auto-orient/thumbnail/54x54%3E/format/webp"></image>
+          <image class="heart2" src="http://res1.eqh5.com/FlgpNH3RK0-ItcmOXZjFu7dBJ_o9?imageMogr2/auto-orient/thumbnail/54x54%3E/format/webp"></image>
+        </view>
+      </view>
+      <view class="headIcon">
+        <image src="http://res1.eqh5.com/o_1d1queu301fptb8g1ik8blc15ojr.jpg?imageMogr2/auto-orient/thumbnail/194x194%3E/format/webp"></image>
+      </view>
+      <view class="t5">
+        <view>嗨，亲爱的情人节快乐</view>
+        <view>今天是我们相识的第1314天</view>
+        <view>非常开心让我遇见最美丽的你</view>
+        <view>静下来的时候想着你</view>
+        <view>一切都美好的那么不可思议</view>
+        <view>让我此生遇见最美的你</view>
+      </view>
+      <image class="img5" src="http://res1.eqh5.com/Fl6fhjiQeEoWTlTC6EkgbAE1YYMS?imageMogr2/auto-orient/thumbnail/85x61%3E/format/webp"></image>
+      <image class="img6" src="img/6.png"></image>
+      <image class="img4" src="img/4.png"></image>
+    </swiper-item>
+    <swiper-item id="page3">
+      <image class="img1" src="http://res1.eqh5.com/o_1d1sl9eoj1244df1k81jamgov15.png?imageMogr2/auto-orient/thumbnail/239x63%3E/format/webp"></image>
+      <image class="img2" src="http://res1.eqh5.com/Fr98ImGQVf6U26scXMpoqewnMjWS?imageMogr2/auto-orient%7CimageMogr2/auto-orient/crop/!57x62a224a0%7CimageMogr2/auto-orient/thumbnail/29x32%3E/format/webp"></image>
+      <image class="heart3" src="http://res1.eqh5.com/FlgpNH3RK0-ItcmOXZjFu7dBJ_o9?imageMogr2/auto-orient/thumbnail/54x54%3E/format/webp"></image>
+    </swiper-item>
+    <swiper-item id="page4">
+      
+    </swiper-item>
+  </block>
+</swiper>
+<image bindtap="autoPlay" src="img/music.png" class="{{auto==true?'bgm-btn rotate':'bgm-btn rotate stopmusic'}}"></image>
+<image class="arrow" src="img/arrow.png"></image>
+<audio poster="{{poster}}" preload="auto" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
